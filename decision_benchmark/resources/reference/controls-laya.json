@@ -1,0 +1,488 @@
+{
+  "model": {
+    "repo": "convaiinnovations/laya",
+    "revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+    "device": "cuda",
+    "threads": 1,
+    "max_len": 512,
+    "head_max_len": 256,
+    "laya_version": "0.3.21"
+  },
+  "profile": "robustness-controlled",
+  "groups": {
+    "ag_news|k2|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.02,
+      "delta_f": 0.125,
+      "delta_d_bootstrap95": [
+        -0.06000000000000001,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.025,
+        0.25
+      ]
+    },
+    "ag_news|k2|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.02,
+      "delta_f": -0.05,
+      "delta_d_bootstrap95": [
+        -0.06000000000000001,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        -0.15,
+        0.0
+      ]
+    },
+    "ag_news|k2|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        -0.15,
+        0.15
+      ]
+    },
+    "ag_news|k3|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.025,
+      "delta_f": 0.125,
+      "delta_d_bootstrap95": [
+        -0.075,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.025,
+        0.25
+      ]
+    },
+    "ag_news|k3|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.05,
+      "delta_f": -0.05,
+      "delta_d_bootstrap95": [
+        -0.15,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        -0.15,
+        0.0
+      ]
+    },
+    "ag_news|k3|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "emotion|k2|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": 0.07,
+      "delta_f": 0.075,
+      "delta_d_bootstrap95": [
+        0.01,
+        0.155
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.15
+      ]
+    },
+    "emotion|k2|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.010000000000000005,
+      "delta_f": -0.1,
+      "delta_d_bootstrap95": [
+        -0.08,
+        0.06999999999999999
+      ],
+      "delta_f_bootstrap95": [
+        -0.25,
+        0.0
+      ]
+    },
+    "emotion|k2|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.1,
+      "delta_f": 0.05,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.25
+      ],
+      "delta_f_bootstrap95": [
+        -0.1,
+        0.2
+      ]
+    },
+    "emotion|k4|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": 0.009999999999999998,
+      "delta_f": 0.05,
+      "delta_d_bootstrap95": [
+        -0.08012499999999999,
+        0.10499999999999998
+      ],
+      "delta_f_bootstrap95": [
+        -0.075,
+        0.175
+      ]
+    },
+    "emotion|k4|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.08,
+      "delta_f": 0.05,
+      "delta_d_bootstrap95": [
+        -0.22999999999999998,
+        0.04
+      ],
+      "delta_f_bootstrap95": [
+        -0.1,
+        0.2
+      ]
+    },
+    "emotion|k4|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.05,
+      "delta_f": 0.15,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.15
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.3
+      ]
+    },
+    "emotion|k5|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.125,
+      "delta_f": 0.05,
+      "delta_d_bootstrap95": [
+        -0.3,
+        0.025
+      ],
+      "delta_f_bootstrap95": [
+        -0.075,
+        0.175
+      ]
+    },
+    "emotion|k5|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.05,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.1,
+        0.2
+      ],
+      "delta_f_bootstrap95": [
+        -0.15,
+        0.15
+      ]
+    },
+    "emotion|k5|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.25,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.1,
+        0.45
+      ],
+      "delta_f_bootstrap95": [
+        -0.15,
+        0.15
+      ]
+    },
+    "trec|k2|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.03,
+      "delta_f": -0.225,
+      "delta_d_bootstrap95": [
+        -0.09,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        -0.4,
+        -0.075
+      ]
+    },
+    "trec|k2|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.0,
+      "delta_f": 0.05,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        -0.1,
+        0.25
+      ]
+    },
+    "trec|k2|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.3,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.1,
+        0.5
+      ]
+    },
+    "trec|k4|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.02,
+      "delta_f": -0.25,
+      "delta_d_bootstrap95": [
+        -0.06000000000000001,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        -0.45,
+        -0.075
+      ]
+    },
+    "trec|k4|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.0,
+      "delta_f": -0.05,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        -0.15,
+        0.0
+      ]
+    },
+    "trec|k4|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.25,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.1,
+        0.45
+      ]
+    },
+    "trec|k5|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": 0.0,
+      "delta_f": -0.15,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        -0.25,
+        -0.05
+      ]
+    },
+    "trec|k5|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        -0.15,
+        0.15
+      ]
+    },
+    "trec|k5|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.15,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.35
+      ]
+    },
+    "dbpedia|k2|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.034999999999999996,
+      "delta_f": 0.05,
+      "delta_d_bootstrap95": [
+        -0.06999999999999999,
+        -0.005
+      ],
+      "delta_f_bootstrap95": [
+        -0.05,
+        0.15
+      ]
+    },
+    "dbpedia|k2|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.04,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.15,
+        0.030000000000000006
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k2|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k4|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": 0.034999999999999996,
+      "delta_f": 0.025,
+      "delta_d_bootstrap95": [
+        -0.04,
+        0.12999999999999998
+      ],
+      "delta_f_bootstrap95": [
+        -0.1,
+        0.15
+      ]
+    },
+    "dbpedia|k4|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.04,
+      "delta_f": 0.05,
+      "delta_d_bootstrap95": [
+        -0.01,
+        0.12
+      ],
+      "delta_f_bootstrap95": [
+        -0.1,
+        0.2
+      ]
+    },
+    "dbpedia|k4|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.1,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.25
+      ]
+    },
+    "dbpedia|k13|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": 0.075,
+      "delta_f": 0.125,
+      "delta_d_bootstrap95": [
+        -0.025,
+        0.175
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.275
+      ]
+    },
+    "dbpedia|k13|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.0,
+      "delta_f": -0.1,
+      "delta_d_bootstrap95": [
+        -0.15,
+        0.15
+      ],
+      "delta_f_bootstrap95": [
+        -0.25,
+        0.0
+      ]
+    },
+    "dbpedia|k13|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.15,
+      "delta_f": 0.05,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.3
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.15
+      ]
+    }
+  },
+  "excluded_interface_comparisons": {},
+  "directions": {
+    "name": "neutral minus natural",
+    "order": "order1 minus order0",
+    "none_wording": "aligned minus legacy"
+  },
+  "bootstrap_replicates": 2000,
+  "notes": [
+    "Matched indicators averaged within each text before text-cluster bootstrap. Intervals marginal.",
+    "Member intervention changes one absent distractor at a fixed slot; present set is invariant. It is not five independent text samples.",
+    "No paired effect implies general causal attribution beyond these specific frozen inputs."
+  ]
+}

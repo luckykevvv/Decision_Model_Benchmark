@@ -1,0 +1,1158 @@
+{
+  "model": {
+    "provider": "TypeSafe",
+    "id": "jev-1.13.0",
+    "endpoint": "https://api.typesafe.ai/v1/systemone"
+  },
+  "n_cases": 750,
+  "n_predictions": 6900,
+  "source": {
+    "repo": "clinc/oos-eval",
+    "revision": "828f8093932c8fe6ca7936c3d2e52903b1c523de",
+    "file_sha256": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+    "paper": "https://aclanthology.org/D19-1131/"
+  },
+  "retriever": {
+    "type": "document BM25, maximum document score per intent",
+    "k1": 1.2,
+    "b": 0.75,
+    "corpus_n": 14700,
+    "query_text_leakage": 0
+  },
+  "summaries": {
+    "artificial|k5|calibration": {
+      "n_queries": 300,
+      "n_covered": 300,
+      "n_missing_inscope": 300,
+      "n_global_oos": 0,
+      "retrieval_coverage": null,
+      "covered": {
+        "correct": {
+          "n_text": 300,
+          "value": 0.9466666666666667,
+          "bootstrap95": [
+            0.92,
+            0.97
+          ]
+        },
+        "wrong": {
+          "n_text": 300,
+          "value": 0.03333333333333333,
+          "bootstrap95": [
+            0.016666666666666666,
+            0.056666666666666664
+          ]
+        },
+        "reject": {
+          "n_text": 300,
+          "value": 0.02,
+          "bootstrap95": [
+            0.006666666666666667,
+            0.03666666666666667
+          ]
+        },
+        "failure": {
+          "n_text": 300,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "missing_inscope": {
+        "reject": {
+          "n_text": 300,
+          "value": 0.6166666666666667,
+          "bootstrap95": [
+            0.56,
+            0.67
+          ]
+        },
+        "accept": {
+          "n_text": 300,
+          "value": 0.38333333333333336,
+          "bootstrap95": [
+            0.33,
+            0.44
+          ]
+        },
+        "failure": {
+          "n_text": 300,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "global_oos": {
+        "reject": {
+          "n_text": 0,
+          "value": null,
+          "bootstrap95": null
+        },
+        "accept": {
+          "n_text": 0,
+          "value": null,
+          "bootstrap95": null
+        },
+        "failure": {
+          "n_text": 0,
+          "value": null,
+          "bootstrap95": null
+        }
+      }
+    },
+    "artificial|k5|test": {
+      "n_queries": 300,
+      "n_covered": 300,
+      "n_missing_inscope": 300,
+      "n_global_oos": 0,
+      "retrieval_coverage": null,
+      "covered": {
+        "correct": {
+          "n_text": 300,
+          "value": 0.93,
+          "bootstrap95": [
+            0.9,
+            0.9566666666666667
+          ]
+        },
+        "wrong": {
+          "n_text": 300,
+          "value": 0.03666666666666667,
+          "bootstrap95": [
+            0.016666666666666666,
+            0.06
+          ]
+        },
+        "reject": {
+          "n_text": 300,
+          "value": 0.03333333333333333,
+          "bootstrap95": [
+            0.013333333333333334,
+            0.05341666666666622
+          ]
+        },
+        "failure": {
+          "n_text": 300,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "missing_inscope": {
+        "reject": {
+          "n_text": 300,
+          "value": 0.6366666666666667,
+          "bootstrap95": [
+            0.58,
+            0.6866666666666666
+          ]
+        },
+        "accept": {
+          "n_text": 300,
+          "value": 0.36333333333333334,
+          "bootstrap95": [
+            0.31333333333333335,
+            0.42
+          ]
+        },
+        "failure": {
+          "n_text": 300,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "global_oos": {
+        "reject": {
+          "n_text": 0,
+          "value": null,
+          "bootstrap95": null
+        },
+        "accept": {
+          "n_text": 0,
+          "value": null,
+          "bootstrap95": null
+        },
+        "failure": {
+          "n_text": 0,
+          "value": null,
+          "bootstrap95": null
+        }
+      }
+    },
+    "natural_retrieval|k2|calibration": {
+      "n_queries": 350,
+      "n_covered": 286,
+      "n_missing_inscope": 14,
+      "n_global_oos": 50,
+      "retrieval_coverage": {
+        "n_text": 300,
+        "value": 0.9533333333333334,
+        "bootstrap95": [
+          0.9299166666666667,
+          0.9766666666666667
+        ]
+      },
+      "covered": {
+        "correct": {
+          "n_text": 286,
+          "value": 0.9685314685314685,
+          "bootstrap95": [
+            0.9475524475524476,
+            0.986013986013986
+          ]
+        },
+        "wrong": {
+          "n_text": 286,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        },
+        "reject": {
+          "n_text": 286,
+          "value": 0.03146853146853147,
+          "bootstrap95": [
+            0.013986013986013986,
+            0.05244755244755245
+          ]
+        },
+        "failure": {
+          "n_text": 286,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "missing_inscope": {
+        "reject": {
+          "n_text": 14,
+          "value": 0.7142857142857143,
+          "bootstrap95": [
+            0.5,
+            0.9285714285714286
+          ]
+        },
+        "accept": {
+          "n_text": 14,
+          "value": 0.2857142857142857,
+          "bootstrap95": [
+            0.07142857142857142,
+            0.5
+          ]
+        },
+        "failure": {
+          "n_text": 14,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "global_oos": {
+        "reject": {
+          "n_text": 50,
+          "value": 0.82,
+          "bootstrap95": [
+            0.7,
+            0.92
+          ]
+        },
+        "accept": {
+          "n_text": 50,
+          "value": 0.18,
+          "bootstrap95": [
+            0.08,
+            0.3
+          ]
+        },
+        "failure": {
+          "n_text": 50,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "natural_retrieval|k2|test": {
+      "n_queries": 400,
+      "n_covered": 269,
+      "n_missing_inscope": 31,
+      "n_global_oos": 100,
+      "retrieval_coverage": {
+        "n_text": 300,
+        "value": 0.8966666666666666,
+        "bootstrap95": [
+          0.86,
+          0.93
+        ]
+      },
+      "covered": {
+        "correct": {
+          "n_text": 269,
+          "value": 0.9479553903345725,
+          "bootstrap95": [
+            0.9219330855018587,
+            0.9739776951672863
+          ]
+        },
+        "wrong": {
+          "n_text": 269,
+          "value": 0.01858736059479554,
+          "bootstrap95": [
+            0.0037174721189591076,
+            0.03717472118959108
+          ]
+        },
+        "reject": {
+          "n_text": 269,
+          "value": 0.03345724907063197,
+          "bootstrap95": [
+            0.01486988847583643,
+            0.055762081784386616
+          ]
+        },
+        "failure": {
+          "n_text": 269,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "missing_inscope": {
+        "reject": {
+          "n_text": 31,
+          "value": 0.8387096774193549,
+          "bootstrap95": [
+            0.7096774193548387,
+            0.967741935483871
+          ]
+        },
+        "accept": {
+          "n_text": 31,
+          "value": 0.16129032258064516,
+          "bootstrap95": [
+            0.03225806451612903,
+            0.2903225806451613
+          ]
+        },
+        "failure": {
+          "n_text": 31,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "global_oos": {
+        "reject": {
+          "n_text": 100,
+          "value": 0.84,
+          "bootstrap95": [
+            0.77,
+            0.91
+          ]
+        },
+        "accept": {
+          "n_text": 100,
+          "value": 0.16,
+          "bootstrap95": [
+            0.09,
+            0.23
+          ]
+        },
+        "failure": {
+          "n_text": 100,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "natural_retrieval|k5|calibration": {
+      "n_queries": 350,
+      "n_covered": 297,
+      "n_missing_inscope": 3,
+      "n_global_oos": 50,
+      "retrieval_coverage": {
+        "n_text": 300,
+        "value": 0.99,
+        "bootstrap95": [
+          0.9766666666666667,
+          1.0
+        ]
+      },
+      "covered": {
+        "correct": {
+          "n_text": 297,
+          "value": 0.9528619528619529,
+          "bootstrap95": [
+            0.9292929292929293,
+            0.9764309764309764
+          ]
+        },
+        "wrong": {
+          "n_text": 297,
+          "value": 0.026936026936026935,
+          "bootstrap95": [
+            0.010101010101010102,
+            0.04713804713804714
+          ]
+        },
+        "reject": {
+          "n_text": 297,
+          "value": 0.020202020202020204,
+          "bootstrap95": [
+            0.006734006734006734,
+            0.037037037037037035
+          ]
+        },
+        "failure": {
+          "n_text": 297,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "missing_inscope": {
+        "reject": {
+          "n_text": 3,
+          "value": 0.6666666666666666,
+          "bootstrap95": [
+            0.0,
+            1.0
+          ]
+        },
+        "accept": {
+          "n_text": 3,
+          "value": 0.3333333333333333,
+          "bootstrap95": [
+            0.0,
+            1.0
+          ]
+        },
+        "failure": {
+          "n_text": 3,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "global_oos": {
+        "reject": {
+          "n_text": 50,
+          "value": 0.78,
+          "bootstrap95": [
+            0.66,
+            0.88
+          ]
+        },
+        "accept": {
+          "n_text": 50,
+          "value": 0.22,
+          "bootstrap95": [
+            0.12,
+            0.34
+          ]
+        },
+        "failure": {
+          "n_text": 50,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "natural_retrieval|k5|test": {
+      "n_queries": 400,
+      "n_covered": 289,
+      "n_missing_inscope": 11,
+      "n_global_oos": 100,
+      "retrieval_coverage": {
+        "n_text": 300,
+        "value": 0.9633333333333334,
+        "bootstrap95": [
+          0.94,
+          0.9833333333333333
+        ]
+      },
+      "covered": {
+        "correct": {
+          "n_text": 289,
+          "value": 0.9204152249134948,
+          "bootstrap95": [
+            0.889273356401384,
+            0.9515570934256056
+          ]
+        },
+        "wrong": {
+          "n_text": 289,
+          "value": 0.03806228373702422,
+          "bootstrap95": [
+            0.01730103806228374,
+            0.058823529411764705
+          ]
+        },
+        "reject": {
+          "n_text": 289,
+          "value": 0.04152249134948097,
+          "bootstrap95": [
+            0.020761245674740483,
+            0.0657439446366782
+          ]
+        },
+        "failure": {
+          "n_text": 289,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "missing_inscope": {
+        "reject": {
+          "n_text": 11,
+          "value": 0.7272727272727273,
+          "bootstrap95": [
+            0.45454545454545453,
+            1.0
+          ]
+        },
+        "accept": {
+          "n_text": 11,
+          "value": 0.2727272727272727,
+          "bootstrap95": [
+            0.0,
+            0.5454545454545454
+          ]
+        },
+        "failure": {
+          "n_text": 11,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "global_oos": {
+        "reject": {
+          "n_text": 100,
+          "value": 0.77,
+          "bootstrap95": [
+            0.68,
+            0.85
+          ]
+        },
+        "accept": {
+          "n_text": 100,
+          "value": 0.23,
+          "bootstrap95": [
+            0.15,
+            0.32
+          ]
+        },
+        "failure": {
+          "n_text": 100,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "natural_retrieval|k10|calibration": {
+      "n_queries": 350,
+      "n_covered": 299,
+      "n_missing_inscope": 1,
+      "n_global_oos": 50,
+      "retrieval_coverage": {
+        "n_text": 300,
+        "value": 0.9966666666666667,
+        "bootstrap95": [
+          0.99,
+          1.0
+        ]
+      },
+      "covered": {
+        "correct": {
+          "n_text": 299,
+          "value": 0.9431438127090301,
+          "bootstrap95": [
+            0.9163879598662207,
+            0.9665551839464883
+          ]
+        },
+        "wrong": {
+          "n_text": 299,
+          "value": 0.04013377926421405,
+          "bootstrap95": [
+            0.020066889632107024,
+            0.06354515050167224
+          ]
+        },
+        "reject": {
+          "n_text": 299,
+          "value": 0.016722408026755852,
+          "bootstrap95": [
+            0.0033444816053511705,
+            0.033444816053511704
+          ]
+        },
+        "failure": {
+          "n_text": 299,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "missing_inscope": {
+        "reject": {
+          "n_text": 1,
+          "value": 1.0,
+          "bootstrap95": [
+            1.0,
+            1.0
+          ]
+        },
+        "accept": {
+          "n_text": 1,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        },
+        "failure": {
+          "n_text": 1,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "global_oos": {
+        "reject": {
+          "n_text": 50,
+          "value": 0.82,
+          "bootstrap95": [
+            0.7,
+            0.92
+          ]
+        },
+        "accept": {
+          "n_text": 50,
+          "value": 0.18,
+          "bootstrap95": [
+            0.08,
+            0.3
+          ]
+        },
+        "failure": {
+          "n_text": 50,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "natural_retrieval|k10|test": {
+      "n_queries": 400,
+      "n_covered": 295,
+      "n_missing_inscope": 5,
+      "n_global_oos": 100,
+      "retrieval_coverage": {
+        "n_text": 300,
+        "value": 0.9833333333333333,
+        "bootstrap95": [
+          0.9666666666666667,
+          0.9966666666666667
+        ]
+      },
+      "covered": {
+        "correct": {
+          "n_text": 295,
+          "value": 0.911864406779661,
+          "bootstrap95": [
+            0.8779661016949153,
+            0.9423728813559322
+          ]
+        },
+        "wrong": {
+          "n_text": 295,
+          "value": 0.0576271186440678,
+          "bootstrap95": [
+            0.033813559322033906,
+            0.08813559322033898
+          ]
+        },
+        "reject": {
+          "n_text": 295,
+          "value": 0.030508474576271188,
+          "bootstrap95": [
+            0.013559322033898305,
+            0.05084745762711865
+          ]
+        },
+        "failure": {
+          "n_text": 295,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "missing_inscope": {
+        "reject": {
+          "n_text": 5,
+          "value": 0.8,
+          "bootstrap95": [
+            0.4,
+            1.0
+          ]
+        },
+        "accept": {
+          "n_text": 5,
+          "value": 0.2,
+          "bootstrap95": [
+            0.0,
+            0.6
+          ]
+        },
+        "failure": {
+          "n_text": 5,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "global_oos": {
+        "reject": {
+          "n_text": 100,
+          "value": 0.75,
+          "bootstrap95": [
+            0.66,
+            0.83
+          ]
+        },
+        "accept": {
+          "n_text": 100,
+          "value": 0.25,
+          "bootstrap95": [
+            0.17,
+            0.34
+          ]
+        },
+        "failure": {
+          "n_text": 100,
+          "value": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "score_policies": {
+    "artificial|k5|none_probability": {
+      "threshold": 0.09,
+      "n_cal_covered": 300,
+      "n_cal_missing": 300,
+      "test_f": {
+        "n_text": 300,
+        "value": 0.09,
+        "bootstrap95": [
+          0.06,
+          0.12333333333333334
+        ]
+      },
+      "test_missing_inscope_d": {
+        "n_text": 300,
+        "value": 0.7833333333333333,
+        "bootstrap95": [
+          0.7366666666666667,
+          0.83
+        ]
+      },
+      "test_global_oos_d": {
+        "n_text": 0,
+        "value": null,
+        "bootstrap95": null
+      },
+      "note": "Calibration-only threshold; missing pool uses the recorded calibration mixture, including public OOS in natural track."
+    },
+    "artificial|k5|negative_max": {
+      "threshold": -0.95,
+      "n_cal_covered": 300,
+      "n_cal_missing": 300,
+      "test_f": {
+        "n_text": 300,
+        "value": 0.11333333333333333,
+        "bootstrap95": [
+          0.08,
+          0.15
+        ]
+      },
+      "test_missing_inscope_d": {
+        "n_text": 300,
+        "value": 0.58,
+        "bootstrap95": [
+          0.5233333333333333,
+          0.64
+        ]
+      },
+      "test_global_oos_d": {
+        "n_text": 0,
+        "value": null,
+        "bootstrap95": null
+      },
+      "note": "Calibration-only threshold; missing pool uses the recorded calibration mixture, including public OOS in natural track."
+    },
+    "artificial|k5|normalized_entropy": {
+      "threshold": 0.12334445573339317,
+      "n_cal_covered": 300,
+      "n_cal_missing": 300,
+      "test_f": {
+        "n_text": 300,
+        "value": 0.11666666666666667,
+        "bootstrap95": [
+          0.08333333333333333,
+          0.15333333333333332
+        ]
+      },
+      "test_missing_inscope_d": {
+        "n_text": 300,
+        "value": 0.6033333333333334,
+        "bootstrap95": [
+          0.5466666666666666,
+          0.6566666666666666
+        ]
+      },
+      "test_global_oos_d": {
+        "n_text": 0,
+        "value": null,
+        "bootstrap95": null
+      },
+      "note": "Calibration-only threshold; missing pool uses the recorded calibration mixture, including public OOS in natural track."
+    },
+    "natural_retrieval|k2|none_probability": {
+      "threshold": 0.18,
+      "n_cal_covered": 286,
+      "n_cal_missing": 64,
+      "test_f": {
+        "n_text": 269,
+        "value": 0.06319702602230483,
+        "bootstrap95": [
+          0.03717472118959108,
+          0.09293680297397769
+        ]
+      },
+      "test_missing_inscope_d": {
+        "n_text": 31,
+        "value": 0.9032258064516129,
+        "bootstrap95": [
+          0.7741935483870968,
+          1.0
+        ]
+      },
+      "test_global_oos_d": {
+        "n_text": 100,
+        "value": 0.89,
+        "bootstrap95": [
+          0.83,
+          0.95
+        ]
+      },
+      "note": "Calibration-only threshold; missing pool uses the recorded calibration mixture, including public OOS in natural track."
+    },
+    "natural_retrieval|k2|negative_max": {
+      "threshold": -0.92,
+      "n_cal_covered": 286,
+      "n_cal_missing": 64,
+      "test_f": {
+        "n_text": 269,
+        "value": 0.06691449814126393,
+        "bootstrap95": [
+          0.03717472118959108,
+          0.09665427509293681
+        ]
+      },
+      "test_missing_inscope_d": {
+        "n_text": 31,
+        "value": 0.41935483870967744,
+        "bootstrap95": [
+          0.25806451612903225,
+          0.6129032258064516
+        ]
+      },
+      "test_global_oos_d": {
+        "n_text": 100,
+        "value": 0.46,
+        "bootstrap95": [
+          0.36,
+          0.56
+        ]
+      },
+      "note": "Calibration-only threshold; missing pool uses the recorded calibration mixture, including public OOS in natural track."
+    },
+    "natural_retrieval|k2|normalized_entropy": {
+      "threshold": 0.4021791902022729,
+      "n_cal_covered": 286,
+      "n_cal_missing": 64,
+      "test_f": {
+        "n_text": 269,
+        "value": 0.06691449814126393,
+        "bootstrap95": [
+          0.03717472118959108,
+          0.09665427509293681
+        ]
+      },
+      "test_missing_inscope_d": {
+        "n_text": 31,
+        "value": 0.41935483870967744,
+        "bootstrap95": [
+          0.25806451612903225,
+          0.6129032258064516
+        ]
+      },
+      "test_global_oos_d": {
+        "n_text": 100,
+        "value": 0.46,
+        "bootstrap95": [
+          0.36,
+          0.56
+        ]
+      },
+      "note": "Calibration-only threshold; missing pool uses the recorded calibration mixture, including public OOS in natural track."
+    },
+    "natural_retrieval|k5|none_probability": {
+      "threshold": 0.16,
+      "n_cal_covered": 297,
+      "n_cal_missing": 53,
+      "test_f": {
+        "n_text": 289,
+        "value": 0.06228373702422145,
+        "bootstrap95": [
+          0.03460207612456748,
+          0.08996539792387544
+        ]
+      },
+      "test_missing_inscope_d": {
+        "n_text": 11,
+        "value": 0.7272727272727273,
+        "bootstrap95": [
+          0.45454545454545453,
+          1.0
+        ]
+      },
+      "test_global_oos_d": {
+        "n_text": 100,
+        "value": 0.83,
+        "bootstrap95": [
+          0.75,
+          0.9
+        ]
+      },
+      "note": "Calibration-only threshold; missing pool uses the recorded calibration mixture, including public OOS in natural track."
+    },
+    "natural_retrieval|k5|negative_max": {
+      "threshold": -0.88,
+      "n_cal_covered": 297,
+      "n_cal_missing": 53,
+      "test_f": {
+        "n_text": 289,
+        "value": 0.09688581314878893,
+        "bootstrap95": [
+          0.0657439446366782,
+          0.1314878892733564
+        ]
+      },
+      "test_missing_inscope_d": {
+        "n_text": 11,
+        "value": 0.7272727272727273,
+        "bootstrap95": [
+          0.45454545454545453,
+          1.0
+        ]
+      },
+      "test_global_oos_d": {
+        "n_text": 100,
+        "value": 0.5,
+        "bootstrap95": [
+          0.4,
+          0.6
+        ]
+      },
+      "note": "Calibration-only threshold; missing pool uses the recorded calibration mixture, including public OOS in natural track."
+    },
+    "natural_retrieval|k5|normalized_entropy": {
+      "threshold": 0.23307715870687665,
+      "n_cal_covered": 297,
+      "n_cal_missing": 53,
+      "test_f": {
+        "n_text": 289,
+        "value": 0.10034602076124567,
+        "bootstrap95": [
+          0.06920415224913495,
+          0.13494809688581316
+        ]
+      },
+      "test_missing_inscope_d": {
+        "n_text": 11,
+        "value": 0.7272727272727273,
+        "bootstrap95": [
+          0.45454545454545453,
+          1.0
+        ]
+      },
+      "test_global_oos_d": {
+        "n_text": 100,
+        "value": 0.57,
+        "bootstrap95": [
+          0.48,
+          0.66
+        ]
+      },
+      "note": "Calibration-only threshold; missing pool uses the recorded calibration mixture, including public OOS in natural track."
+    },
+    "natural_retrieval|k10|none_probability": {
+      "threshold": 0.34,
+      "n_cal_covered": 299,
+      "n_cal_missing": 51,
+      "test_f": {
+        "n_text": 295,
+        "value": 0.030508474576271188,
+        "bootstrap95": [
+          0.013559322033898305,
+          0.05084745762711865
+        ]
+      },
+      "test_missing_inscope_d": {
+        "n_text": 5,
+        "value": 0.8,
+        "bootstrap95": [
+          0.4,
+          1.0
+        ]
+      },
+      "test_global_oos_d": {
+        "n_text": 100,
+        "value": 0.79,
+        "bootstrap95": [
+          0.70975,
+          0.8602499999999986
+        ]
+      },
+      "note": "Calibration-only threshold; missing pool uses the recorded calibration mixture, including public OOS in natural track."
+    },
+    "natural_retrieval|k10|negative_max": {
+      "threshold": -0.82,
+      "n_cal_covered": 299,
+      "n_cal_missing": 51,
+      "test_f": {
+        "n_text": 295,
+        "value": 0.0847457627118644,
+        "bootstrap95": [
+          0.05423728813559322,
+          0.11864406779661017
+        ]
+      },
+      "test_missing_inscope_d": {
+        "n_text": 5,
+        "value": 0.4,
+        "bootstrap95": [
+          0.0,
+          0.8
+        ]
+      },
+      "test_global_oos_d": {
+        "n_text": 100,
+        "value": 0.54,
+        "bootstrap95": [
+          0.44,
+          0.64
+        ]
+      },
+      "note": "Calibration-only threshold; missing pool uses the recorded calibration mixture, including public OOS in natural track."
+    },
+    "natural_retrieval|k10|normalized_entropy": {
+      "threshold": 0.2071917108496672,
+      "n_cal_covered": 299,
+      "n_cal_missing": 51,
+      "test_f": {
+        "n_text": 295,
+        "value": 0.09152542372881356,
+        "bootstrap95": [
+          0.061016949152542375,
+          0.12542372881355932
+        ]
+      },
+      "test_missing_inscope_d": {
+        "n_text": 5,
+        "value": 0.6,
+        "bootstrap95": [
+          0.2,
+          1.0
+        ]
+      },
+      "test_global_oos_d": {
+        "n_text": 100,
+        "value": 0.57,
+        "bootstrap95": [
+          0.47,
+          0.67
+        ]
+      },
+      "note": "Calibration-only threshold; missing pool uses the recorded calibration mixture, including public OOS in natural track."
+    }
+  },
+  "sha256": {
+    "manifest.json": "f4883c4b616b7d0fcfbb96a8540662bc1a83b5fb94a9e4f0c6b28f7ddeb3f2c3",
+    "cases.jsonl": "a3cf3cfda039979c1a1e410423290ddd5844a9dd69f29d659e55ee7332c300d4",
+    "requests.jsonl": "8fe8d2be840a3af479cf56d9c19a9909c0349b1c2dd034dc50203601ef6c2190",
+    "predictions.jsonl": "1586aef961fedfcd0019dfd73945d6e6af0a2ccce08d4d943a3061743f85a12c"
+  },
+  "notes": [
+    "Artificial omission, naturally missed in-scope candidates and global OOS are separate populations.",
+    "No gold repair in natural retrieval; selected query texts excluded from training retrieval corpus.",
+    "Rates are conditional on each stated subset; no pooling into a deployment OOS prevalence estimate.",
+    "2000 text bootstrap draws, marginal. Synthetic present/absent copies are matched by query; per-track D/F intervals are marginal rates.",
+    "No invented probabilities for the discrete Qwen track."
+  ]
+}

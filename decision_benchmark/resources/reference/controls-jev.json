@@ -1,0 +1,484 @@
+{
+  "model": {
+    "provider": "TypeSafe",
+    "id": "jev-1.13.0",
+    "endpoint": "https://api.typesafe.ai/v1/systemone"
+  },
+  "profile": "robustness-controlled",
+  "groups": {
+    "ag_news|k2|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": 0.03,
+      "delta_f": -0.034999999999999996,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.075
+      ],
+      "delta_f_bootstrap95": [
+        -0.10499999999999998,
+        0.0
+      ]
+    },
+    "ag_news|k2|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "ag_news|k2|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "ag_news|k3|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": 0.034999999999999996,
+      "delta_f": -0.05,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.095
+      ],
+      "delta_f_bootstrap95": [
+        -0.15,
+        0.0
+      ]
+    },
+    "ag_news|k3|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "ag_news|k3|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "emotion|k2|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.04,
+      "delta_f": -0.135,
+      "delta_d_bootstrap95": [
+        -0.09,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        -0.27999999999999997,
+        -0.005
+      ]
+    },
+    "emotion|k2|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.0,
+      "delta_f": -0.01,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        -0.030000000000000006,
+        0.0
+      ]
+    },
+    "emotion|k2|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.05,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.15
+      ]
+    },
+    "emotion|k4|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.095,
+      "delta_f": -0.06999999999999999,
+      "delta_d_bootstrap95": [
+        -0.25,
+        0.01
+      ],
+      "delta_f_bootstrap95": [
+        -0.185,
+        0.0
+      ]
+    },
+    "emotion|k4|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.030000000000000006,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.08,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "emotion|k4|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.05,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.15
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "emotion|k5|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.07999999999999999,
+      "delta_f": -0.06999999999999999,
+      "delta_d_bootstrap95": [
+        -0.23000000000000004,
+        0.045
+      ],
+      "delta_f_bootstrap95": [
+        -0.175,
+        0.005
+      ]
+    },
+    "emotion|k5|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.009999999999999998,
+      "delta_f": -0.019999999999999997,
+      "delta_d_bootstrap95": [
+        -0.15,
+        0.13999999999999999
+      ],
+      "delta_f_bootstrap95": [
+        -0.15,
+        0.11000000000000001
+      ]
+    },
+    "emotion|k5|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.05,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.15
+      ]
+    },
+    "trec|k2|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.025,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.06,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k2|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.02,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.05,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k2|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k4|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.02,
+      "delta_f": 0.015,
+      "delta_d_bootstrap95": [
+        -0.09,
+        0.05500000000000001
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.045
+      ]
+    },
+    "trec|k4|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 2.7755575615628915e-18,
+      "delta_f": -0.03,
+      "delta_d_bootstrap95": [
+        -0.07999999999999999,
+        0.06999999999999999
+      ],
+      "delta_f_bootstrap95": [
+        -0.09,
+        0.0
+      ]
+    },
+    "trec|k4|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.05,
+      "delta_f": 0.05,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.15
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.15
+      ]
+    },
+    "trec|k5|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.11000000000000001,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.255,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k5|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.04,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.12000000000000002,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k5|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.1,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.25
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k2|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": 0.02,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.05
+      ],
+      "delta_f_bootstrap95": [
+        -0.075,
+        0.075
+      ]
+    },
+    "dbpedia|k2|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k2|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.05,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.15
+      ]
+    },
+    "dbpedia|k4|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": 0.0,
+      "delta_f": 0.015,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.045
+      ]
+    },
+    "dbpedia|k4|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.02,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.05
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k4|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k13|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": 0.01,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.034999999999999996,
+        0.06999999999999999
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k13|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.04,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.11000000000000001,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k13|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.05,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.15
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "excluded_interface_comparisons": {},
+  "directions": {
+    "name": "neutral minus natural",
+    "order": "order1 minus order0",
+    "none_wording": "aligned minus legacy"
+  },
+  "bootstrap_replicates": 2000,
+  "notes": [
+    "Matched indicators averaged within each text before text-cluster bootstrap. Intervals marginal.",
+    "Member intervention changes one absent distractor at a fixed slot; present set is invariant. It is not five independent text samples.",
+    "No paired effect implies general causal attribution beyond these specific frozen inputs."
+  ]
+}

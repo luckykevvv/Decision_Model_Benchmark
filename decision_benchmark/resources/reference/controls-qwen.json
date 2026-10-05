@@ -1,0 +1,502 @@
+{
+  "model": {
+    "provider": "local-generative",
+    "repo": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "dtype": "bfloat16",
+    "score_track": "discrete"
+  },
+  "profile": "robustness-controlled",
+  "groups": {
+    "ag_news|k2|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.13,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.23500000000000001,
+        -0.04
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "ag_news|k2|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.03,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.09,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "ag_news|k2|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "ag_news|k3|name": {
+      "n_text": 20,
+      "n_matched_variants": 200,
+      "delta_d": -0.2,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.375,
+        -0.025
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "ag_news|k3|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.1,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.25
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "ag_news|k3|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "emotion|k2|name": {
+      "n_text": 20,
+      "n_matched_variants": 183,
+      "delta_d": -0.20658730158730157,
+      "delta_f": -0.075,
+      "delta_d_bootstrap95": [
+        -0.3321428571428572,
+        -0.08944047619047621
+      ],
+      "delta_f_bootstrap95": [
+        -0.2,
+        0.05
+      ]
+    },
+    "emotion|k2|order": {
+      "n_text": 19,
+      "n_matched_variants": 88,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "emotion|k2|none_wording": {
+      "n_text": 18,
+      "n_matched_variants": 18,
+      "delta_d": 0.05555555555555555,
+      "delta_f": 0.05555555555555555,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.16666666666666666
+      ]
+    },
+    "emotion|k4|name": {
+      "n_text": 20,
+      "n_matched_variants": 195,
+      "delta_d": -0.195,
+      "delta_f": -0.05,
+      "delta_d_bootstrap95": [
+        -0.40499999999999997,
+        -0.015000000000000003
+      ],
+      "delta_f_bootstrap95": [
+        -0.125,
+        0.0
+      ]
+    },
+    "emotion|k4|order": {
+      "n_text": 19,
+      "n_matched_variants": 95,
+      "delta_d": -0.05263157894736842,
+      "delta_f": 0.05263157894736842,
+      "delta_d_bootstrap95": [
+        -0.12631578947368421,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.15789473684210525
+      ]
+    },
+    "emotion|k4|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "emotion|k5|name": {
+      "n_text": 20,
+      "n_matched_variants": 195,
+      "delta_d": -0.175,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.35,
+        -0.05
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "emotion|k5|order": {
+      "n_text": 19,
+      "n_matched_variants": 95,
+      "delta_d": -0.05263157894736842,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.15789473684210525,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "emotion|k5|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k2|name": {
+      "n_text": 20,
+      "n_matched_variants": 195,
+      "delta_d": 0.07,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.02,
+        0.175
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k2|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.07999999999999999,
+      "delta_f": -0.05,
+      "delta_d_bootstrap95": [
+        0.009999999999999998,
+        0.17000000000000004
+      ],
+      "delta_f_bootstrap95": [
+        -0.15,
+        0.0
+      ]
+    },
+    "trec|k2|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": -0.1,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.25,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k4|name": {
+      "n_text": 20,
+      "n_matched_variants": 186,
+      "delta_d": 0.004999999999999996,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.08,
+        0.07999999999999999
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k4|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.04,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.1,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k4|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k5|name": {
+      "n_text": 20,
+      "n_matched_variants": 190,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k5|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "trec|k5|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k2|name": {
+      "n_text": 19,
+      "n_matched_variants": 178,
+      "delta_d": -0.12105263157894736,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.20526315789473687,
+        -0.04736842105263158
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k2|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.03,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.1,
+        0.02
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k2|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.05,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.15
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k4|name": {
+      "n_text": 20,
+      "n_matched_variants": 185,
+      "delta_d": -0.38999999999999996,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.55,
+        -0.24
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k4|order": {
+      "n_text": 20,
+      "n_matched_variants": 100,
+      "delta_d": -0.07,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.21999999999999997,
+        0.04
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k4|none_wording": {
+      "n_text": 20,
+      "n_matched_variants": 20,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k13|name": {
+      "n_text": 18,
+      "n_matched_variants": 160,
+      "delta_d": -0.3055555555555556,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.5277777777777778,
+        -0.1111111111111111
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k13|none_wording": {
+      "n_text": 18,
+      "n_matched_variants": 18,
+      "delta_d": 0.0,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dbpedia|k13|order": {
+      "n_text": 17,
+      "n_matched_variants": 85,
+      "delta_d": -0.058823529411764705,
+      "delta_f": 0.0,
+      "delta_d_bootstrap95": [
+        -0.17647058823529413,
+        0.0
+      ],
+      "delta_f_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "excluded_interface_comparisons": {
+    "emotion|k2|name": 17,
+    "emotion|k2|order": 12,
+    "emotion|k2|none_wording": 2,
+    "emotion|k5|name": 5,
+    "emotion|k5|order": 5,
+    "emotion|k4|name": 5,
+    "emotion|k4|order": 5,
+    "trec|k4|name": 14,
+    "trec|k5|name": 10,
+    "trec|k2|name": 5,
+    "dbpedia|k4|name": 15,
+    "dbpedia|k13|name": 40,
+    "dbpedia|k13|order": 15,
+    "dbpedia|k2|name": 22,
+    "dbpedia|k13|none_wording": 2
+  },
+  "directions": {
+    "name": "neutral minus natural",
+    "order": "order1 minus order0",
+    "none_wording": "aligned minus legacy"
+  },
+  "bootstrap_replicates": 2000,
+  "notes": [
+    "Matched indicators averaged within each text before text-cluster bootstrap. Intervals marginal.",
+    "Member intervention changes one absent distractor at a fixed slot; present set is invariant. It is not five independent text samples.",
+    "No paired effect implies general causal attribution beyond these specific frozen inputs."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "model": {
+    "provider": "closed-scope-labeled-corpus-reference",
+    "id": "BM25-scope-gate",
+    "supported_training_intents": 150,
+    "labeled_corpus_utterances": 14700,
+    "generic_open_class_support": false,
+    "native_probabilities": false
+  },
+  "code_sha256": "b109e9dee7ec4d1fc50fd14b1efe6b4e8748f359c5d95c5b7b016b0e3db808a3",
+  "method": "BM25 maximum document score per known intent; reject if full-scope winner not offered and NONE exists",
+  "limitations": "Uses labeled training corpus and fixed intent identifiers; not an open-type comparator or calibrated OOS detector.",
+  "query_corpus_overlap": 0
+}

@@ -1,0 +1,18 @@
+{
+  "model": {
+    "provider": "TypeSafe",
+    "id": "jev-1.13.0",
+    "endpoint": "https://api.typesafe.ai/v1/systemone"
+  },
+  "settings": {
+    "workers": 4,
+    "chunk_questions": 64,
+    "budget_usd": 1.0
+  },
+  "code_sha256": {
+    "run_confirmation_jev.py": "3f387981a5f092bf7b1ec0acbb1e288ced3a98775b1b60a7383ce063be22faaf",
+    "confirmation_runtime.py": "c2e0b47606df542b385c17b4557a80df2526efe2d613cd4060720e8e88139df5",
+    "jev_api.py": "1fedfb39575d63260e3bda1fcc3734ee753b2664f00e6529bc138f6bf87be05a"
+  },
+  "created_at_utc": "2026-10-02T18:23:31.245821+00:00"
+}

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this benchmark software when using the protocol or recorded outputs."
+type: software
+title: Decision Model Benchmark
+version: 0.2.0
+date-released: 2026-10-06
+url: https://github.com/luckykevvv/Decision_Model_Benchmark
+repository-code: https://github.com/luckykevvv/Decision_Model_Benchmark
+license: MIT
+authors:
+  - family-names: Lu
+    given-names: Jiawen
+    affiliation: Monash University
+  - family-names: Wu
+    given-names: Tongtong
+    affiliation: Monash University

@@ -1,0 +1,39 @@
+{
+  "model": {
+    "repo": "convaiinnovations/laya",
+    "revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+    "device": "cuda",
+    "threads": 1,
+    "max_len": 512,
+    "head_max_len": 256,
+    "laya_version": "0.3.21"
+  },
+  "settings": {
+    "batch_size": 8
+  },
+  "package_versions": {
+    "torch": "2.8.0",
+    "transformers": "4.56.2",
+    "laya": "0.3.21",
+    "numpy": "2.3.3"
+  },
+  "effective_temperature": [
+    1.6369030475616455,
+    1.2514300346374512,
+    1.983399510383606
+  ],
+  "effective_temperature_by_options": {
+    "choice:3-5": 1.7601518630981445,
+    "choice:6-10": 1.0000158548355103,
+    "score:3-5": 1.2514300346374512,
+    "noul:2": 1.983399510383606,
+    "choice:11+": 0.5,
+    "choice:2": 1.9063563346862793
+  },
+  "code_sha256": {
+    "run_confirmation_laya.py": "2222d22d81d89bd1ddaa952d703e47124f64d07f31fe609898e91c21a1e70a59",
+    "confirmation_runtime.py": "c2e0b47606df542b385c17b4557a80df2526efe2d613cd4060720e8e88139df5",
+    "model_runtime.py": "d28eb8ef624fe09261244cbace0ad9ba51a444625bd55dddcc6eb61f34983a7b"
+  },
+  "created_at_utc": "2026-10-02T17:31:52.683929+00:00"
+}

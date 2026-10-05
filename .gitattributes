@@ -1,0 +1,4 @@
+# Preserve published byte fingerprints across Windows/Linux checkouts.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.gz binary
+*.pdf binary
